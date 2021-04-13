@@ -1,0 +1,7 @@
+﻿<metadata>
+  <remove-node path="/api/package[@name='com.gallagher.security.mobileaccess']/interface[@name='MobileAccess']/method[@name='getNetworkServiceFactory']" />
+
+  <remove-node path="/api/package[@name='com.gallagher.security.mobileaccess']/class[@name='NetworkServiceFactory']" />
+  
+  <remove-node path="/api/package[@name='com.gallagher.security.mobileaccess']/interface[@name='NetworkService']" />
+</metadata>

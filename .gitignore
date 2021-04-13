@@ -1,0 +1,7 @@
+bin/
+obj/
+
+*.csproj.user
+
+# don't commit jars
+android/Jars/
