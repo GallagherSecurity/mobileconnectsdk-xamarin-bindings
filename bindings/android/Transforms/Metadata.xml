@@ -1,7 +1,13 @@
 ﻿<metadata>
-  <remove-node path="/api/package[@name='com.gallagher.security.mobileaccess']/interface[@name='MobileAccess']/method[@name='getNetworkServiceFactory']" />
+    <!-- Things the SDK depends on internally, but which don't need to exposed to Xamarin -->
+    <remove-node path="/api/package[starts-with(@name, 'com.annimon.stream')]" />
+    <remove-node path="/api/package[starts-with(@name, 'rx')]" />
+    <remove-node path="/api/package[starts-with(@name, 'com.gallagher.security.libasn')]" />
+    <remove-node path="/api/package[starts-with(@name, 'com.gallagher.security.libtlv')]" />
 
-  <remove-node path="/api/package[@name='com.gallagher.security.mobileaccess']/class[@name='NetworkServiceFactory']" />
-  
-  <remove-node path="/api/package[@name='com.gallagher.security.mobileaccess']/interface[@name='NetworkService']" />
+    <!-- internal for Gallagher use, which don't need to be exposed to Xamarin -->
+    <remove-node path="/api/package[@name='com.gallagher.security.mobileaccess']/interface[@name='NetworkService']" />
+    <remove-node path="/api/package[@name='com.gallagher.security.mobileaccess']/interface[@name='NetworkServiceFactory']" />
+
+    <remove-node path="/api/package[@name='com.gallagher.security.mobileaccess']/interface[@name='MobileAccess']/method[@name='getNetworkServiceFactory']" />
 </metadata>

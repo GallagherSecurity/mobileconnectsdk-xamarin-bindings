@@ -13,7 +13,7 @@
     <RootNamespace>MobileConnectSdk.Bindings</RootNamespace>
     <AssemblyName>MobileConnectSdk.Bindings</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
   </PropertyGroup>
@@ -38,6 +38,7 @@
     <Reference Include="Mono.Android" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,19 +53,13 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\stream-1.1.9.jar">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedReferenceJar>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\rxjava-1.2.3.jar">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedReferenceJar>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\slf4j-api-1.7.25.jar">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedReferenceJar>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\stream-1.2.1.jar" />
+    <EmbeddedJar Include="Jars\rxjava-1.3.8.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

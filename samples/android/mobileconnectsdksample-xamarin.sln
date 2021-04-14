@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mobileconnectsdksample-xamarin", "mobileconnectsdksample-xamarin\mobileconnectsdksample-xamarin.csproj", "{52381C0D-EAAA-42D6-BAE9-66657B9E0A21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileConnectSdk.Android.Bindings", "..\..\..\..\..\mobileconnectsdk-xamarin-bindings\android\MobileConnectSdk.Android.Bindings.csproj", "{F6511412-F7BD-47C6-B1A7-0D869A1A1D3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileConnectSdk.Android.Bindings", "..\..\bindings\android\MobileConnectSdk.Android.Bindings.csproj", "{F6511412-F7BD-47C6-B1A7-0D869A1A1D3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
