@@ -17,7 +17,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -170,7 +170,7 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\mobileconnectsdk-xamarin-bindings\android\MobileConnectSdk.Android.Bindings.csproj">
+    <ProjectReference Include="..\..\..\bindings\android\MobileConnectSdk.Android.Bindings.csproj">
       <Project>{F6511412-F7BD-47C6-B1A7-0D869A1A1D3F}</Project>
       <Name>MobileConnectSdk.Android.Bindings</Name>
     </ProjectReference>

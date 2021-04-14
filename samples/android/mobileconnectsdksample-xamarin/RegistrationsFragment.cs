@@ -71,7 +71,7 @@ namespace mobileconnectsdksample_xamarin
                     // *********************************************************************************
                     // Ask the Mobile Connect SDK to delete our credential
                     // *********************************************************************************
-                    m_mobileAccess.DeleteMobileCredential(item, (credential, error) =>
+                    m_mobileAccess.DeleteMobileCredential(item, DeleteOption.Default, (credential, error) =>
                     {
                         if (error != null)
                         {

@@ -80,16 +80,16 @@ namespace mobileconnectsdksample_xamarin
             // *********************************************************************************
 
             // The default BluetoothBackgroundScanMode is FOREGROUND_ONLY
-            mobileAccess.SetBluetoothBackgroundScanMode(BluetoothScanMode.BackgroundLowLatency);
+            mobileAccess.BluetoothBackgroundScanMode = BluetoothScanMode.BackgroundLowLatency;
 
             // The default IsNfcPreferred is true
             mobileAccess.SetIsNfcPreferred(true);
 
             // Automatic access is disabled by default. Call disableAutomaticAccess to turn it off if you turn it on
-            mobileAccess.EnableAutomaticAccess();
+            mobileAccess.AutomaticAccessEnabled = true;
 
             // more code will go here
-            mobileAccess.StartScanning();
+            mobileAccess.SetScanning(true);
         }
 
 

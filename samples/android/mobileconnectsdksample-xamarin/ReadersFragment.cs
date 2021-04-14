@@ -64,7 +64,7 @@ namespace mobileconnectsdksample_xamarin
             // *********************************************************************************
             // Ask the SDK to tell us about readers it discovers
             // *********************************************************************************
-            mMobileAccess.SetReaderUpdateListener(mAdapter);
+            mMobileAccess.AddReaderUpdateListener(mAdapter);
 
             // *********************************************************************************
             // Ask the SDK to tell us about automatic access so we can show UI if needed
@@ -177,7 +177,7 @@ namespace mobileconnectsdksample_xamarin
         // AutomaticAccessListener:
         // The MobileConnect SDK is telling us access completed for the given reader
         // *********************************************************************************
-        public void OnAccessCompleted(IReader reader, IAccessResult accessResult, ReaderConnectionError error)
+        public void OnAccessCompleted(IReader reader, AccessResult accessResult, ReaderConnectionError error)
         {
             // 'error' only occurs if there's some sort of lower-level error (e.g. bluetooth disconnect)
             // in the normal case error will be null, and you should check accessResult.isAccessGranted().

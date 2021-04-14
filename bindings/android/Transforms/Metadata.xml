@@ -2,6 +2,7 @@
     <!-- Things the SDK depends on internally, but which don't need to exposed to Xamarin -->
     <remove-node path="/api/package[starts-with(@name, 'com.annimon.stream')]" />
     <remove-node path="/api/package[starts-with(@name, 'rx')]" />
+    <remove-node path="/api/package[starts-with(@name, 'org.bouncycastle')]" />
     <remove-node path="/api/package[starts-with(@name, 'com.gallagher.security.libasn')]" />
     <remove-node path="/api/package[starts-with(@name, 'com.gallagher.security.libtlv')]" />
 

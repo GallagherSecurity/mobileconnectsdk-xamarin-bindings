@@ -24,8 +24,8 @@ namespace mobileconnectsdksample_xamarin
             public void OnCredentialDeleteCompleted(IMobileCredential p0, Throwable p1) => m_handler(p0, p1);
         }
 
-        public static void DeleteMobileCredential(this IMobileAccess mobileAccess, IMobileCredential credential, Action<IMobileCredential, Throwable> onCredentialDeleteCompleted)
-            => mobileAccess.DeleteMobileCredential(credential, new AnonymousCredentialDeleteListener(onCredentialDeleteCompleted));
+        public static void DeleteMobileCredential(this IMobileAccess mobileAccess, IMobileCredential credential, DeleteOption deleteOption, Action<IMobileCredential, Throwable> onCredentialDeleteCompleted)
+            => mobileAccess.DeleteMobileCredential(credential, deleteOption, new AnonymousCredentialDeleteListener(onCredentialDeleteCompleted));
 
         class AnonymousRegisterCredentialListener : Java.Lang.Object, IRegistrationListener
         {
