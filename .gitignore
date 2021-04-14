@@ -8,3 +8,5 @@ android/Jars/
 *.aar
 *.jar
 .DS_Store
+.vs
+.vscode
