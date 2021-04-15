@@ -6,14 +6,13 @@ using System.Text;
 using Android.Content;
 using Android.Content.Res;
 using Android.OS;
-using Android.Runtime;
-using Android.Support.Design.Widget;
-using Android.Support.V4.App;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
+using AndroidX.AppCompat.App;
+using AndroidX.Fragment.App;
+using AndroidX.RecyclerView.Widget;
 using Com.Gallagher.Security.Mobileaccess;
+using Google.Android.Material.FloatingActionButton;
 
 namespace mobileconnectsdksample_xamarin
 {
