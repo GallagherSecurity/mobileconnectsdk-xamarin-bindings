@@ -46,11 +46,10 @@
   <ItemGroup>
     <None Include="Additions\AboutAdditions.txt" />
     <LibraryProjectZip Include="Jars\gallaghermobileaccess-15.01.032.aar" />
+    <None Include="Jars\README.md" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
-    <TransformFile Include="Transforms\EnumFields.xml" />
-    <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\slf4j-api-1.7.25.jar">
