@@ -9,9 +9,9 @@ If you encounter a problem with the software you are encouraged to submit a Pull
 
 ## Bindings
 
-The Xamarin Bindings project for Android can be found under the [bindings/android](2) directory
+The Xamarin Bindings project for Android can be found under the [bindings/android][2] directory
 
-The Xamarin Sample application for Android can be found under the [samples/android](3) directory. You may wish to start by checking you can build and run the Sample application before moving on to integrate the bindings project into your own application
+The Xamarin Sample application for Android can be found under the [samples/android][3] directory. You may wish to start by checking you can build and run the Sample application before moving on to integrate the bindings project into your own application
 
 [1]: LICENSE
 [2]: bindings/android
