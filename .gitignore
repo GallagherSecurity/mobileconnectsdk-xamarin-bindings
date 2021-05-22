@@ -10,3 +10,6 @@ android/Jars/
 .DS_Store
 .vs
 .vscode
+xcuserdata
+*.xcframework
+build

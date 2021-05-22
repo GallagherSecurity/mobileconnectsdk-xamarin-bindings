@@ -1,36 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="mobileconnectsdksample_xamarin.mobileconnectsdksample_xamarin" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="24" android:targetSdkVersion="29" />
-
 	<!-- Credential registration -->
 	<uses-permission android:name="android.permission.INTERNET" />
-
 	<!-- Bluetooth LE -->
 	<uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
-
 	<uses-permission android:name="android.permission.BLUETOOTH" />
 	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-
 	<!-- Required for Android 6.0 and later when using Bluetooth LE -->
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
 	<!-- Required for Android 10 and later when using Bluetooth LE -->
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
 	<!-- Required for Android 10 and later when using Bluetooth LE in the background -->
 	<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-
 	<!-- permission for BLE scanning in the background if you wish to enable that feature - https://developer.android.com/about/versions/pie/android-9.0-changes-28 -->
 	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-
 	<!-- NFC -->
 	<uses-permission android:name="android.permission.NFC" />
-
 	<!-- Unlock notification wakes the screen -->
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
-
 	<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
-		
 		<service android:name="com.gallagher.security.mobileaccess.BleBackgroundService" android:exported="false" android:stopWithTask="false" />
 		<service android:name="com.gallagher.security.mobileaccess.NfcBackgroundService" android:enabled="true" android:exported="true" android:permission="android.permission.BIND_NFC_SERVICE">
 			<intent-filter>
