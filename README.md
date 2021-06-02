@@ -11,13 +11,20 @@ If you encounter a problem with the software you are encouraged to submit a Pull
 
 The Xamarin Bindings project for Android can be found under the [bindings/android][bindingsandroid] directory
 
-The Xamarin Sample application for Android can be found under the [samples/android][samplesandroid] directory. You may wish to start by checking you can build and run the Sample application before moving on to integrate the bindings project into your own application
+The Xamarin Sample application for Android can be found under the [samples/android][samplesandroid] directory.  
+We recommend that you start by building and running the Sample application from its `.sln`, before moving on to integrate the bindings project into your own application
 
 ## iOS Bindings
 
-The Xamarin Bindings project for iOS can be found under the [bindings/ios][bindingsios] directory
+The iOS SDK is written in "pure" Swift, which Xamarin cannot directly use.  
+As per [Microsoft's iOS binding documentation](ms-ios-bindings), an Objective-C compatible "proxy" framework is required. The Xamarin bindings then reference this proxy framework.
 
-The Xamarin Sample application for Android can be found under the [samples/ios][samplesios] directory. You may wish to start by checking you can build and run the Sample application before moving on to integrate the bindings project into your own application
+The proxy framework for iOS (Xcode project) can be found under the [bindings/ios/mobileconnectsdkproxy][bindingsiosproxy] directory
+
+The Xamarin Bindings project for iOS can be found under the [bindings/ios/MobileConnectSdk.iOS.Bindings][bindingsios] directory
+
+The Xamarin Sample application for Android can be found under the [samples/ios][samplesios] directory.  
+We recommend that you start by building and running the Sample application from its `.sln`, before moving on to integrate the bindings project into your own application
 
 # Status
 
@@ -49,5 +56,7 @@ Note: A tick means that code exists for the feature. It does not indicate qualit
 [license]: LICENSE
 [bindingsandroid]: bindings/android
 [samplesandroid]: samples/android
-[bindingsios]: bindings/ios
+[ms-ios-bindings]: https://docs.microsoft.com/en-us/xamarin/ios/platform/binding-swift/walkthrough
+[bindingsiosproxy]: bindings/ios/mobileconnectsdkproxy
+[bindingsios]: bindings/ios/MobileConnectSdk.iOS.Bindings
 [samplesios]: samples/ios
