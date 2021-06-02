@@ -17,7 +17,7 @@ We recommend that you start by building and running the Sample application from 
 ## iOS Bindings
 
 The iOS SDK is written in "pure" Swift, which Xamarin cannot directly use.  
-As per [Microsoft's iOS binding documentation](ms-ios-bindings), an Objective-C compatible "proxy" framework is required. The Xamarin bindings then reference this proxy framework.
+As per [Microsoft's iOS binding documentation][ms-ios-bindings], an Objective-C compatible "proxy" framework is required. The Xamarin bindings then reference this proxy framework.
 
 The proxy framework for iOS (Xcode project) can be found under the [bindings/ios/mobileconnectsdkproxy][bindingsiosproxy] directory
 
